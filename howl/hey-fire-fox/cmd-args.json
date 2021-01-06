@@ -1,0 +1,11 @@
+{
+  "model": "res8",
+  "workspace": "workspaces/hey-ff-res8",
+  "load_weights": false,
+  "load_last": false,
+  "dev_per_epoch": true,
+  "dataset_paths": [
+    "/data/speaker-id-split-medium"
+  ],
+  "eval": false
+}

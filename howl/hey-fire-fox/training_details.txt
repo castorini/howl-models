@@ -1,0 +1,7 @@
+command used
+
+LR_DECAY=0.98 VOCAB='[" hey","fire","fox"]' USE_NOISE_DATASET=True BATCH_SIZE=16 INFERENCE_THRESHOLD=0 NUM_EPOCHS=100 NUM_MELS=40 INFERENCE_SEQUENCE=[0,1,2] MAX_WINDOW_SIZE_SECONDS=0.5 python -m howl.run.demo --model res8 --workspace workspaces/hey-ff-res8
+
+latest training accuracy
+
+ConfusionMatrix(tp=70, fp=0, tn=0, fn=6)
