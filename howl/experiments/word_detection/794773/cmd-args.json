@@ -1,0 +1,11 @@
+{
+  "model": "res8",
+  "workspace": "/home/brandon1lee/howl/workspaces/exp_hey_firefox_res8/794773",
+  "load_weights": false,
+  "load_last": false,
+  "dev_per_epoch": true,
+  "dataset_paths": [
+    "/home/brandon1lee/data/kws/speaker-id-split-medium"
+  ],
+  "eval": false
+}

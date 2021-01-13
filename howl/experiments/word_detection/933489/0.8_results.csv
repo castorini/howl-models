@@ -1,0 +1,8 @@
+Dev positive,0.8,68,0,0,8
+Dev negative,0.8,0,2497,34,0
+Dev noisy positive,0.8,57,0,0,19
+Dev noisy negative,0.8,0,2518,13,0
+Test positive,0.8,35,0,0,19
+Test negative,0.8,0,2463,41,0
+Test noisy positive,0.8,33,0,0,21
+Test noisy negative,0.8,0,2479,25,0
