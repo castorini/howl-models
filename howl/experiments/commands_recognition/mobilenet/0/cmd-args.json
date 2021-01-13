@@ -1,0 +1,6 @@
+{
+  "model": "mobilenet",
+  "workspace": "/home/j474lee/howl/workspaces/mobilenet/0",
+  "load_weights": false,
+  "eval": false
+}

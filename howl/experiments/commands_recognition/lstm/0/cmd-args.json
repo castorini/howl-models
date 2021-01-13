@@ -1,0 +1,6 @@
+{
+  "model": "lstm",
+  "workspace": "/home/j474lee/howl/workspaces/lstm/0",
+  "load_weights": false,
+  "eval": false
+}

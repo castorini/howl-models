@@ -1,0 +1,6 @@
+{
+  "model": "las",
+  "workspace": "/home/j474lee/howl/workspaces/las/0",
+  "load_weights": false,
+  "eval": false
+}
