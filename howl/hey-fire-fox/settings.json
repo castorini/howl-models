@@ -4,7 +4,7 @@
     "vocab": ["hey", "fire", "fox"],
     "inference_sequence": [0, 1, 2],
     "token_type": "word",
-    "use_frame": true,
+    "use_frame": true
   },
   "audio_transform": {
     "num_mels": 40
