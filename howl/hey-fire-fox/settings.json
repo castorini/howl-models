@@ -1,9 +1,15 @@
 {
+  "model": {
     "model_name": "res8",
     "vocab": ["hey", "fire", "fox"],
     "inference_sequence": [0, 1, 2],
     "token_type": "word",
     "use_frame": true,
-    "num_mels": 40,
+  },
+  "audio_transform": {
+    "num_mels": 40
+  },
+  "training": {
     "max_window_size_seconds": 0.5
+  }
 }
