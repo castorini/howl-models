@@ -5,6 +5,5 @@
     "token_type": "word",
     "use_frame": true,
     "num_mels": 40,
-    "max_window_size_seconds": 0.5,
-    "eval_stride_size_seconds": 0.15
+    "max_window_size_seconds": 0.5
 }
