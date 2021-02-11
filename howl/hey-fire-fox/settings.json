@@ -1,0 +1,51 @@
+{
+  "_cache": {
+    "cache_size": 128144
+  },
+  "_training": {
+    "seed": 0,
+    "vocab": [
+      "hey",
+      "fire",
+      "fox"
+    ],
+    "num_epochs": 300,
+    "num_labels": 2,
+    "learning_rate": 0.01,
+    "device": "cuda:0",
+    "batch_size": 16,
+    "lr_decay": 0.98,
+    "max_window_size_seconds": 0.5,
+    "eval_window_size_seconds": 0.75,
+    "eval_stride_size_seconds": 0.063,
+    "weight_decay": 1e-05,
+    "convert_static": false,
+    "objective": "frame",
+    "token_type": "word",
+    "phone_dictionary": null,
+    "use_noise_dataset": true
+  },
+  "_inference_engine": {
+    "inference_weights": null,
+    "inference_sequence": [
+      0,
+      1,
+      2
+    ],
+    "inference_window_ms": 2000.0,
+    "smoothing_window_ms": 50.0,
+    "tolerance_window_ms": 500.0,
+    "inference_threshold": 0.0
+  },
+  "_audio": {
+    "sample_rate": 16000,
+    "use_mono": true
+  },
+  "_audio_transform": {
+    "num_fft": 512,
+    "num_mels": 40,
+    "sample_rate": 16000,
+    "hop_length": 200,
+    "use_meyda_spectrogram": false
+  }
+}
