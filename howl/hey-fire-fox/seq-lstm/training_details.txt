@@ -1,0 +1,7 @@
+command used
+
+source envs/seq-lstm.env
+USE_NOISE_DATASET=True NOISE_DATASET_PATH=<dataset> NUM_EPOCHS=1000 python -m howl.run.train --model seq-lstm --workspace workspaces/seq_lstm -i <dataset>
+
+ConfusionMatrix(tp=66, fp=0, tn=0, fn=10)
+

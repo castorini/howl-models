@@ -1,0 +1,27 @@
+(howl) roboeye-2@Roboeye-2:~/Documents/personal/research/howl_projects/howl$ python -m training.run.train --model res8 --workspace howl-models/howl/hey-fire-fox --eval --dataset-paths /data/speaker-id-split-medium
+2021-02-12 19:31:40 [INFO] serialize: Loading flat dataset from /data/speaker-id-split-medium...
+2021-02-12 19:31:59 [INFO] create_raw_dataset: Wake word dataset (DatasetType.TRAINING) statistics: AudioDatasetStatistics(num_examples=26634, audio_length_seconds=111928.04543750011)
+2021-02-12 19:32:01 [INFO] create_raw_dataset: Wake word dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=2607, audio_length_seconds=10679.505062500015)
+2021-02-12 19:32:03 [INFO] create_raw_dataset: Wake word dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=2558, audio_length_seconds=10364.291000000001)
+2021-02-12 19:32:03 [INFO] create_raw_dataset: Dev dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=76, audio_length_seconds=126.97837499999999)
+2021-02-12 19:32:05 [INFO] create_raw_dataset: Dev dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=2531, audio_length_seconds=10552.52668750001)
+2021-02-12 19:32:05 [INFO] create_raw_dataset: Test dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=54, audio_length_seconds=94.43156250000001)
+2021-02-12 19:32:06 [INFO] create_raw_dataset: Test dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=2504, audio_length_seconds=10269.859437499998)
+2021-02-12 19:32:08 [INFO] train: Loaded 416 noise files.
+2021-02-12 19:32:08 [INFO] train: 109939 parameters
+Dev positive: 100%|███████████████████████████████████████████████████████████████| 76/76 [00:03<00:00, 19.78it/s, mcc=0.0, c=ConfusionMatrix(tp=72, fp=0, tn=0, fn=4)]
+2021-02-12 19:32:12 [INFO] train: ConfusionMatrix(tp=72, fp=0, tn=0, fn=4)
+Dev negative: 100%|████████████████████████████████████████████████████████| 2531/2531 [05:02<00:00,  8.36it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=16, tn=2515, fn=0)]
+2021-02-12 19:37:15 [INFO] train: ConfusionMatrix(tp=0, fp=16, tn=2515, fn=0)
+Dev noisy positive: 100%|████████████████████████████████████████████████████████| 76/76 [00:04<00:00, 16.92it/s, mcc=0.0, c=ConfusionMatrix(tp=65, fp=0, tn=0, fn=11)]
+2021-02-12 19:37:19 [INFO] train: ConfusionMatrix(tp=65, fp=0, tn=0, fn=11)
+Dev noisy negative: 100%|██████████████████████████████████████████████████| 2531/2531 [04:30<00:00,  9.37it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=13, tn=2518, fn=0)]
+2021-02-12 19:41:50 [INFO] train: ConfusionMatrix(tp=0, fp=13, tn=2518, fn=0)
+Test positive: 100%|██████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 32.84it/s, mcc=0.0, c=ConfusionMatrix(tp=45, fp=0, tn=0, fn=9)]
+2021-02-12 19:41:51 [INFO] train: ConfusionMatrix(tp=45, fp=0, tn=0, fn=9)
+Test negative: 100%|███████████████████████████████████████████████████████| 2504/2504 [04:53<00:00,  8.53it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=14, tn=2490, fn=0)]
+2021-02-12 19:46:45 [INFO] train: ConfusionMatrix(tp=0, fp=14, tn=2490, fn=0)
+Test noisy positive: 100%|███████████████████████████████████████████████████████| 54/54 [00:01<00:00, 30.08it/s, mcc=0.0, c=ConfusionMatrix(tp=41, fp=0, tn=0, fn=13)]
+2021-02-12 19:46:47 [INFO] train: ConfusionMatrix(tp=41, fp=0, tn=0, fn=13)
+Test noisy negative: 100%|██████████████████████████████████████████████████| 2504/2504 [05:49<00:00,  7.15it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=8, tn=2496, fn=0)]
+2021-02-12 19:52:37 [INFO] train: ConfusionMatrix(tp=0, fp=8, tn=2496, fn=0)

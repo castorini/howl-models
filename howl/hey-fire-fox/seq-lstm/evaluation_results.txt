@@ -1,0 +1,27 @@
+(howl) roboeye-2@Roboeye-2:~/Documents/personal/research/howl_projects/howl$ USE_NOISE_DATASET=True NOISE_DATASET_PATH=/data/MS-SNSD/ python -m howl.run.train --model seq-lstm --workspace workspaces/test/words/with_blank/ --eval --dataset-paths /data/speaker-id-split-medium/
+2021-02-12 17:56:34 [INFO] serialize: Loading flat dataset from /data/speaker-id-split-medium...
+2021-02-12 17:56:55 [INFO] create_raw_dataset: Wake word dataset (DatasetType.TRAINING) statistics: AudioDatasetStatistics(num_examples=26634, audio_length_seconds=111928.04543750011)
+2021-02-12 17:56:57 [INFO] create_raw_dataset: Wake word dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=2607, audio_length_seconds=10679.505062500015)
+2021-02-12 17:56:58 [INFO] create_raw_dataset: Wake word dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=2558, audio_length_seconds=10364.291000000001)
+2021-02-12 17:56:59 [INFO] create_raw_dataset: Dev dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=76, audio_length_seconds=126.97837499999999)
+2021-02-12 17:57:00 [INFO] create_raw_dataset: Dev dataset (DatasetType.DEV) statistics: AudioDatasetStatistics(num_examples=2531, audio_length_seconds=10552.52668750001)
+2021-02-12 17:57:00 [INFO] create_raw_dataset: Test dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=54, audio_length_seconds=94.43156250000001)
+2021-02-12 17:57:02 [INFO] create_raw_dataset: Test dataset (DatasetType.TEST) statistics: AudioDatasetStatistics(num_examples=2504, audio_length_seconds=10269.859437499998)
+2021-02-12 17:57:03 [INFO] train: Loaded 416 noise files.
+2021-02-12 17:57:03 [INFO] train: 121349 parameters
+Dev positive: 100%|█████████████████████████████████████████████████████████████████████| 76/76 [00:01<00:00, 39.62it/s, mcc=0.0, c=ConfusionMatrix(tp=70, fp=0, tn=0, fn=6)]
+2021-02-12 17:57:05 [INFO] train: ConfusionMatrix(tp=70, fp=0, tn=0, fn=6)
+Dev negative: 100%|█████████████████████████████████████████████████████████████| 2531/2531 [02:24<00:00, 17.50it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=190, tn=2341, fn=0)]
+2021-02-12 17:59:30 [INFO] train: ConfusionMatrix(tp=0, fp=190, tn=2341, fn=0)
+Dev noisy positive: 100%|███████████████████████████████████████████████████████████████| 76/76 [00:02<00:00, 36.51it/s, mcc=0.0, c=ConfusionMatrix(tp=69, fp=0, tn=0, fn=7)]
+2021-02-12 17:59:32 [INFO] train: ConfusionMatrix(tp=69, fp=0, tn=0, fn=7)
+Dev noisy negative: 100%|███████████████████████████████████████████████████████| 2531/2531 [02:25<00:00, 17.34it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=190, tn=2341, fn=0)]
+2021-02-12 18:01:58 [INFO] train: ConfusionMatrix(tp=0, fp=190, tn=2341, fn=0)
+Test positive: 100%|████████████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 42.79it/s, mcc=0.0, c=ConfusionMatrix(tp=51, fp=0, tn=0, fn=3)]
+2021-02-12 18:01:59 [INFO] train: ConfusionMatrix(tp=51, fp=0, tn=0, fn=3)
+Test negative: 100%|████████████████████████████████████████████████████████████| 2504/2504 [02:19<00:00, 17.90it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=213, tn=2291, fn=0)]
+2021-02-12 18:04:19 [INFO] train: ConfusionMatrix(tp=0, fp=213, tn=2291, fn=0)
+Test noisy positive: 100%|██████████████████████████████████████████████████████████████| 54/54 [00:01<00:00, 37.81it/s, mcc=0.0, c=ConfusionMatrix(tp=52, fp=0, tn=0, fn=2)]
+2021-02-12 18:04:21 [INFO] train: ConfusionMatrix(tp=52, fp=0, tn=0, fn=2)
+Test noisy negative: 100%|██████████████████████████████████████████████████████| 2504/2504 [02:22<00:00, 17.61it/s, mcc=0.0, c=ConfusionMatrix(tp=0, fp=212, tn=2292, fn=0)]
+2021-02-12 18:06:43 [INFO] train: ConfusionMatrix(tp=0, fp=212, tn=2292, fn=0)

@@ -1,0 +1,22 @@
+Dev positive,0.0,70,0,0,6
+Dev positive,0.0,70,0,0,6
+Dev negative,0.0,0,2341,190,0
+Test positive,0.0,51,0,0,3
+Dev positive,0.0,70,0,0,6
+Dev positive,0.0,70,0,0,6
+Dev positive,0.0,35,0,0,41
+Dev positive,0.0,70,0,0,6
+Dev negative,0.0,0,2341,190,0
+Test positive,0.0,51,0,0,3
+Dev positive,0.0,70,0,0,6
+Dev negative,0.0,0,2341,190,0
+Test positive,0.0,51,0,0,3
+Test negative,0.0,0,2291,213,0
+Dev positive,0.0,70,0,0,6
+Dev negative,0.0,0,2341,190,0
+Dev noisy positive,0.0,69,0,0,7
+Dev noisy negative,0.0,0,2341,190,0
+Test positive,0.0,51,0,0,3
+Test negative,0.0,0,2291,213,0
+Test noisy positive,0.0,52,0,0,2
+Test noisy negative,0.0,0,2292,212,0

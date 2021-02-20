@@ -1,0 +1,11 @@
+{
+  "model": "seq-lstm",
+  "workspace": "workspaces/words/seq_lstm",
+  "load_weights": false,
+  "load_last": false,
+  "dev_per_epoch": true,
+  "dataset_paths": [
+    "/home/brandon1lee/data/kws/speaker-id-split-medium"
+  ],
+  "eval": false
+}
